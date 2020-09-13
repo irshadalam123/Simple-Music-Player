@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back_song_name"
+        android:weightSum="10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/playing_symbol"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="8.5"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/groov_icon"/>
+
+        <TextView
+            android:id="@+id/myItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
